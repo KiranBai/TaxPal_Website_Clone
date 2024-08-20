@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxPal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+   
+    <nav class="flex flex-col md:flex-row items-center justify-between p-6">
+        <div class="flex items-center mb-4 md:mb-0">
+            <img class="h-9" src="Images/Logo.png" alt="Logo">
+            <div class="text-black text-2xl font-normal">Tax<span class="text-blue-600 text-2xl font-bold">Pal</span></div>
+        </div>
+        <div>
+            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 gap-6">
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">Features</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">Testimonials</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-gray-900">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="mt-4 md:mt-0">
+            <a href="#" class="text-blue-600 hover:text-blue-800">Sign in</a>
+            <a href="#" class="ml-0 md:ml-4 mt-2 md:mt-0 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 block md:inline-block">Get started today</a>
+        </div>
+    </nav>
+
+   
+    <section class="text-center py-10 md:py-20 px-4 md:px-0">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
+            Accounting <span class="text-blue-600">made simple</span><br class="hidden md:block"> for small businesses.
+        </h1>
+        <p class="mt-6 text-lg text-gray-500 max-w-xl mx-auto">
+            Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.
+        </p>
+        <div class="mt-8 flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+            <a href="#" class="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800">Get 6 months free</a>
+            <a href="#" class="px-6 py-3 text-blue-600 hover:text-blue-800 rounded-md flex flex-row"><img src="Images/UpArrow.png">Watch video</a>
+        </div>
+    </section>
+    <section class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-lg font-semibold text-gray-700 mb-8">Trusted by these six companies so far</h2>
+            <div class="flex flex-wrap justify-center items-center space-x-8">
+                <img src="Images/transistor.png" alt="Transistor" class="h-12">
+                <img src="Images/tuple.png" alt="Tuple" class="h-12">
+                <img src="Images/statickit.png" alt="StaticKit" class="h-12">
+                <img src="Images/mirage.png" alt="Mirage" class="h-12">
+                <img src="Images/laravel.png" alt="Laravel" class="h-12">
+                <img src="Images/statamic.png" alt="Statamic" class="h-12">
+            </div>
+        </div>
+    </section>
+    
+    <section class="flex flex-col items-center justify-center px-4 py-16 md:py-24 bg-blue-600 text-white">
+     
+        <div class="w-full text-center mb-8">
+            <h2 class="text-2xl md:text-4xl font-bold mb-4">Everything you need to run your books.</h2>
+            <p class="text-lg md:text-xl">Well everything you need if you aren’t that picky about minor details like tax compliance.</p>
+        </div>
+    
+        <div class="flex flex-col md:flex-row items-center justify-center w-full">
+          
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <ul class="space-y-4">
+                    <li><button onclick="showImage('payroll')" class="font-bold text-white">Payroll:</button><br> Keep track of everyone’s salaries and whether or not they’ve been paid. Direct deposit not supported.</li>
+                    <li><button onclick="showImage('expenses')" class="font-bold text-white">Claim expenses:</button><br> All of your receipts organized into one place, as long as you don’t mind typing in the data by hand.</li>
+                    <li><button onclick="showImage('vat')" class="font-bold text-white">VAT handling:</button><br> We only sell our software to companies who don’t deal with VAT at all, so technically we do all the VAT stuff they need.</li>
+                    <li><button onclick="showImage('reporting')" class="font-bold text-white">Reporting:</button><br> Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.</li>
+                </ul>
+            </div>
+    
+            
+            <div class="md:w-1/2 flex justify-center relative">
+                <img id="payroll" src="Images/payroll.png" alt="Payroll Image" class="w-full md:w-4/5 h-auto rounded-lg shadow-lg hidden">
+                <img id="expenses" src="Images/expenses.png" alt="Claim Expenses Image" class="w-full md:w-4/5 h-auto rounded-lg shadow-lg hidden">
+                <img id="vat" src="Images/VAT.png" alt="VAT Handling Image" class="w-full md:w-4/5 h-auto rounded-lg shadow-lg hidden">
+                <img id="reporting" src="Images/Reporting.png" alt="Reporting Image" class="w-full md:w-4/5 h-auto rounded-lg shadow-lg hidden">
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-white text-gray-800">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Simplify everyday business tasks.</h2>
+            <p class="text-lg md:text-xl text-gray-600">Because you’d probably be a little confused if we suggested you complicate your everyday business tasks instead.</p>
+        </div>
+    
+        <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+          
+            <div class="flex flex-col items-center text-left p-4 md:w-1/3">
+                <div class="text-blue-500 mb-4">
+                    
+                    <img class="h-12 w-12" src="Images/Report.png">
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Reporting</h3>
+                <p class="text-gray-600 hover:text-black">Stay on top of things with always up-to-date reporting features.</p>
+                <p class="text-sm text-gray-500 mt-2">We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.</p>
+            </div>
+    
+          
+            <div class="flex flex-col items-center text-left p-4 md:w-1/3">
+                <div class="text-gray-500 mb-4">
+                <img class="h-12 w-12" src="Images/Invent.png">
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Inventory</h3>
+                <p class="text-gray-600 hover:text-black">Never lose track of what’s in stock with accurate inventory tracking.</p>
+                <p class="text-sm text-gray-500 mt-2">We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.</p>
+            </div>
+    
+           
+            <div class="flex flex-col items-center text-left p-4 md:w-1/3">
+                <div class="text-gray-500 mb-4">
+                    <img class="h-12 w-12" src="Images/Contact.png">
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Contacts</h3>
+                <p class="text-gray-600 hover:text-black">Organize all of your contacts, service providers, and invoices in one place.</p>
+                <p class="text-sm text-gray-500 mt-2">This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.</p>
+            </div>
+        </div>
+    </section>
+    <img src="Images/ProfitLoss.png">
+    <section class="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 min-h-screen flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-white text-4xl font-bold mb-4">Get started today</h1>
+            <p class="text-white text-lg mb-8">It's time to take control of your books. Buy our software so you<br> can feel like you're doing something productive.</p>
+            <a href="#" class="inline-block bg-white text-blue-500 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">Get 6 months free</a>
+        </div>
+    </section>
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto text-left px-4">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-4 text-center">Loved by businesses worldwide.</h2>
+            <p class="text-lg text-gray-500 mb-12 text-center">Our software is so simple that people can’t help but fall in love with it. Simplicity<br> is easy when you just skip tons of mission-critical features.</p>
+            
+            <div class="grid gap-8 lg:grid-cols-3">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-4" src="Images/Sheryl.png" alt="User Image">
+                        <div>
+                            <p class="text-gray-900 font-bold">Sheryl Berge</p>
+                            <p class="text-gray-600">CEO at Lynch LLC</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-4" src="Images/Leland.png" alt="User Image">
+                        <div>
+                            <p class="text-gray-900 font-bold">Leland Kiehn</p>
+                            <p class="text-gray-600">Founder of Kiehn and Sons</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-4" src="Images/Sheryl.png" alt="User Image">
+                        <div>
+                            <p class="text-gray-900 font-bold">Peter Renolds</p>
+                            <p class="text-gray-600">Founder of West Inc</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-4" src="Images/Leland.png" alt="User Image">
+                        <div>
+                            <p class="text-gray-900 font-bold">Amy Hahn</p>
+                            <p class="text-gray-600">Director at Velocity Industries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-4" src="Images/Sheryl.png" alt="User Image">
+                        <div>
+                            <p class="text-gray-900 font-bold">Erin Powlowski</p>
+                            <p class="text-gray-600">COO at Armstrong Inc</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-700 mb-4">This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.</p>
+                    <div class="flex items-center">
+                        <img class="w-12 h-12 rounded-full mr-4" src="Images/Leland.png" alt="User Image">
+                        <div>
+                            <p class="text-gray-900 font-bold">Amy Hahn</p>
+                            <p class="text-gray-600">Director at Velocity Industries</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="py-20  md:py-24 bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto text-center px-4 text-left text-white">
+            <h2 class="text-3xl font-extrabold text-white mb-4">Simple pricing, for everyone.</h2>
+            <p class="text-lg text-gray-400 mb-12">It doesn’t matter what size your business is, our software won’t work well for you.</p>
+            
+            <div class="grid gap-8 lg:grid-cols-3">
+                
+              
+                <div class="bg-white p-6 rounded-lg shadow-lg  bg-blue-900 text-white text-left">
+                    <div class="text-4xl font-extrabold  mb-6">$9</div>
+                    <h3 class="text-xl font-bold  mb-4">Starter</h3>
+                    <p class="text-gray-400 mb-6">Good for anyone who is self-employed and just getting started.</p>
+                    <button class="bg-blue-700  text-white  py-2 px-4 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">
+                        Get started
+                    </button>
+                    <ul class="space-y-2 mb-6">
+                        <li>Send 10 quotes and invoices</li>
+                        <li>Connect up to 2 bank accounts</li>
+                        <li>Track up to 15 expenses per month</li>
+                        <li>Manual payroll support</li>
+                        <li>Export up to 3 reports</li>
+                    </ul>
+                   
+                </div>
+
+              
+                <div class="bg-blue-700 p-6 rounded-lg shadow-lg text-white text-left">
+                    <div class="text-4xl font-extrabold mb-6">$15</div>
+                    <h3 class="text-xl font-bold mb-4">Small business</h3>
+                    <p class=" text-gray-400 mb-6">Perfect for small / medium-sized businesses.</p>
+                    
+                    <button class="bg-yellow-50 text-black py-2 px-4 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 text-center align-center">
+                        Get started
+                    </button>
+                    <ul class=" space-y-2 mb-6">
+                        <li>Send 25 quotes and invoices</li>
+                        <li>Connect up to 5 bank accounts</li>
+                        <li>Track up to 50 expenses per month</li>
+                        <li>Automated payroll support</li>
+                        <li>Export up to 12 reports</li>
+                        <li>Bulk reconcile transactions</li>
+                        <li>Track in multiple currencies</li>
+                    </ul>
+                    
+                </div>
+
+              
+                <div class="bg-white p-6 rounded-lg shadow-lg text-left text-white  bg-blue-900 text-white">
+                    <div class="text-4xl font-extrabold  mb-6">$39</div>
+                    <h3 class="text-xl font-bold  mb-4">Enterprise</h3>
+                    <p class="text-gray-400 mb-6">For even the biggest enterprise companies.</p>
+                    
+                    <button class="bg-blue-700 text-white py-2 px-4 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">
+                        Get started
+                    </button>
+                    <ul class=" space-y-2 mb-6">
+                        <li>Send unlimited quotes and invoices</li>
+                        <li>Connect up to 15 bank accounts</li>
+                        <li>Track up to 200 expenses per month</li>
+                        <li>Automated payroll support</li>
+                        <li>Export up to 25 reports, including TPS</li>
+                    </ul>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-gradient-to-r from-white to-purple-50 min-h-screen flex items-center justify-center">
+        <div class="w-3/4">
+            <h1 class="text-4xl font-semibold text-center mb-8">Frequently asked questions</h1>
+            <p class="text-center mb-12">If you can’t find what you’re looking for, email our support team and if you’re lucky someone will get back to you.</p>
+    
+            <div class="grid grid-cols-2 gap-8">
+                
+                <div>
+                    <h3 class="font-bold">Does TaxPal handle VAT?</h3>
+                    <p>Well no, but if you move your company offshore you can probably ignore it.</p>
+                </div>
+               
+                <div>
+                    <h3 class="font-bold">What was that testimonial about tax fraud all about?</h3>
+                    <p>TaxPal is just a software application, ultimately your books are your responsibility.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold">Can I pay for my subscription via purchase order?</h3>
+                    <p>Absolutely, we are happy to take your money in all forms.</p>
+                </div>
+             
+                <div>
+                    <h3 class="font-bold">TaxPal sounds horrible but why do I still feel compelled to purchase?</h3>
+                    <p>This is the power of excellent visual design. You just can't resist it, no matter how poorly it actually functions.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold">How do I apply for a job at TaxPal?</h3>
+                    <p>We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.</p>
+                </div>
+               
+                <div>
+                    <h3 class="font-bold">I found other companies called TaxPal, are you sure you can use this name?</h3>
+                    <p>Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold">How do you generate reports?</h3>
+                    <p>You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold">Can we expect more inventory features?</h3>
+                    <p>In life it’s really better to never expect anything at all.</p>
+                </div>
+              
+                <div>
+                    <h3 class="font-bold">I lost my password, how do I get into my account?</h3>
+                    <p>Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" flex items-center justify-center bg-gray-100 text-center">
+            <footer class="flex flex-col items-center text-center space-y-4 mt-12">
+                <div class="flex items-center space-x-2">
+                    <img class="h-9" src="Images/Logo.png" alt="Logo">
+                    <div class="text-black text-2xl font-normal">Tax<span class="text-blue-600 text-2xl font-bold">Pal</span></div>
+                </div>
+    
+                <div>
+                    <ul class="flex flex-col md:flex-row md:space-x-8 gap-6 text-center">
+                        <li><a href="#" class="text-gray-700 hover:text-gray-900">Features</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-gray-900">Testimonials</a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-gray-900">Pricing</a></li>
+                    </ul>
+                </div>
+    
+                <p class="text-gray-500">&copy; 2024 TaxPal. All rights reserved.</p>
+            </footer>
+        </section>
+    <script>
+        function showImage(imageId) {
+            
+            document.querySelectorAll('img').forEach(img => {
+                img.classList.add('hidden');
+            });
+
+         
+            document.getElementById(imageId).classList.remove('hidden');
+        }
+
+        
+        document.getElementById('payroll').classList.remove('hidden');
+    </script>
+</body>
+</html>
